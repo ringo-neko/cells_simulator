@@ -25,7 +25,7 @@ window.onload = function() {
   //細胞2 0    0    0     0    -1   0.1   -0.3  0.2
   //細胞3 0    0    0     0    0    -0.6  0.1   -0.7
   //細胞4 0    0    0     0    0.8  -1    0.7   0.5
-  grabity=[
+  gravity=[
     [0,0,1  ,0,0,  0,  0,  0  ],
     [0,0,1  ,0,0,  0,  0,  0  ],
     [0,0,0.1,0,0,  0,  0,  0  ],
@@ -36,7 +36,12 @@ window.onload = function() {
     [0,0,0  ,0,   0,-0.6,0.1,-0.7],
     [0,0,0  ,0,   0.8,-1,0.7,0.5],
   ]
-  
+  cells=[]
+  for(i=0;i<8;i++) {
+    for(units=0;units<8;units++) {
+      cells[cells.length]=[i,Math.random(),Math.random()*1.5]
+    }
+  }
   while(true) {
     let w=window.innerWidth;
     let h=window.innerHeight;
