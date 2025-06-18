@@ -38,7 +38,7 @@ window.onload = function() {
   ]
   cells=[]
   for(i=0;i<8;i++) {
-    for(units=0;units<8;units++) {
+    for(units=0;units<20;units++) {
       cells[cells.length]=[i,Math.random(),Math.random()*1.5]
     }
   }
