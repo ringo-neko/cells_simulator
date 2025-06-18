@@ -3,7 +3,18 @@ window.onload = function() {
   let h=window.innerHeight;
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
-
+  //+++ 植物1 植物2 水 細胞1 細胞2 細胞3 細胞4
+  //植物1 0    0    0  0    0     0     0
+  //植物2 0    0    0  0    0     0     0
+  //みず1 0    0
+  //細胞1 0    0
+  //細胞2 0    0
+  //細胞3 0    0
+  //細胞4 0    0
+  grabity=[
+    [],
+  ]
+  
   while(true) {
     let w=window.innerWidth;
     let h=window.innerHeight;
