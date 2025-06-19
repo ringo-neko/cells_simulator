@@ -59,7 +59,7 @@ window.onload = function() {
       c_type=cells[i][0]
       c_x   =cells[i][1]
       c_y   =cells[i][2]
-      arc(c_x, c_y, , size/100, 6.3, false);
+      arc(c_x, c_y, size/100,0, 6.3, false);
     }
   }
 }
