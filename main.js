@@ -54,7 +54,7 @@ window.onload = function() {
       }   
     }
     ctx.lineWidth = 5; // 線の幅は5px
-
+    break
     
     size=i-1
     ctx.fillStyle="rgb(0,0,0)"
