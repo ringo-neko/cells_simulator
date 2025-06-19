@@ -39,7 +39,7 @@ window.onload = function() {
   cells=[]
   for(i=0;i<8;i++) {
     for(units=0;units<20;units++) {
-      cells[cells.length]=[i,Math.random(),Math.random()*1.5]
+      cells[cells.length]=[i,Math.random()*100,Math.random()*150]
     }
   }
   while(true) {
@@ -52,7 +52,14 @@ window.onload = function() {
         break;
       }   
     }
+    size=i-1
     ctx.fillStyle="rgb(0,0,0)"
     ctx.fillRect(0,0,canvas.width,canvas.height)
+    for(i=0;i<cells.length;i++){
+      c_type=cells[i][0]
+      c_x   =cells[i][1]
+      c_y   =cells[i][2]
+      arc(c_x, c_y, , size/100, 6.3, false);
+    }
   }
 }
