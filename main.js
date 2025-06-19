@@ -53,6 +53,9 @@ window.onload = function() {
         break;
       }   
     }
+    ctx.lineWidth = 5; // 線の幅は5px
+
+    
     size=i-1
     ctx.fillStyle="rgb(0,0,0)"
     ctx.fillRect(0,0,canvas.width,canvas.height)
@@ -60,7 +63,11 @@ window.onload = function() {
       c_type=cells[i][0]
       c_x   =cells[i][1]
       c_y   =cells[i][2]
-      arc(c_x, c_y, size/100,0, 6.3, false);
+      /* 円の描画 */
+      ctx.beginPath();
+      ctx.arc(c_x, c_y, size/80, 0, 6.3);
+      ctx.closePath();
+      ctx.fill();
     }
   }
 }
