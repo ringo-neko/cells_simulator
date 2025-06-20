@@ -55,7 +55,7 @@ window.onload = function() {
       }   
     }
     ctx.lineWidth = 5; // 線の幅は5px
-    
+    ctx.strokeStyle = '#333'; // 塗りつぶしは暗めの色
     
     size=i-1
     ctx.fillStyle="rgb(0,0,0)"
