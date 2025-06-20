@@ -69,6 +69,9 @@ window.onload = function() {
       ctx.arc(c_x, c_y, size/80, 0, 6.3);
       ctx.closePath();
       ctx.fill();
+      if(i==1000) {
+        console.log("BUG")
+      }
     }
   }
 }
