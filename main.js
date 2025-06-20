@@ -47,17 +47,18 @@ window.onload = function() {
   while(true) {
     let w=window.innerWidth;
     let h=window.innerHeight;
-    for(i=0;i<10000;i++) {
-      if(i>w || i*1.5>h) {
-        canvas.width=i-1;
-        canvas.height=i*1.5-1.5;
+    for(size=0;size<10000;size++) {
+      if(size>w || size*1.5>h) {
+        canvas.width=size-1;
+        canvas.height=size*1.5-1.5;
+        size--
         break;
       }   
     }
     ctx.lineWidth = 5; // 線の幅は5px
     ctx.strokeStyle = '#333'; // 塗りつぶしは暗めの色
     
-    size=i-1
+    
     ctx.fillStyle="rgb(0,0,0)"
     ctx.fillRect(0,0,canvas.width,canvas.height)
     for(i=0;i<cells.length;i++){
