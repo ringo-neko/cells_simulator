@@ -42,6 +42,7 @@ window.onload = function() {
       cells[cells.length]=[i,Math.random()*100,Math.random()*150]
     }
   }
+  console.log(cells)
   //main loop
   while(true) {
     let w=window.innerWidth;
