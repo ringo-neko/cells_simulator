@@ -58,7 +58,7 @@ window.onload = function() {
     ctx.lineWidth = 5; // 線の幅は5px
     ctx.strokeStyle = '#333'; // 塗りつぶしは暗めの色
     
-    
+    break
     ctx.fillStyle="rgb(0,0,0)"
     ctx.fillRect(0,0,canvas.width,canvas.height)
     for(i=0;i<cells.length;i++){
