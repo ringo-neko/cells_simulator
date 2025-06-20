@@ -62,6 +62,7 @@ window.onload = function() {
     ctx.fillStyle="rgb(0,0,0)"
     ctx.fillRect(0,0,canvas.width,canvas.height)
     for(i=0;i<cells.length;i++){
+      console.log(i)
       c_type=cells[i][0]
       c_x   =cells[i][1]
       c_y   =cells[i][2]
@@ -70,9 +71,6 @@ window.onload = function() {
       ctx.arc(c_x, c_y, size/80, 0, 6.3);
       ctx.closePath();
       ctx.fill();
-      if(i==1000) {
-        console.log("BUG")
-      }
     }
   }
 }
