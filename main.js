@@ -39,7 +39,7 @@ window.onload = function() {
   cells=[]
   for(type_of_unit=0;type_of_unit<8;type_of_unit++) {
     for(units=0;units<20;units++) {
-      cells[cells.length]=[i,Math.random()*100,Math.random()*150]
+      cells[cells.length]=[units,Math.random()*100,Math.random()*150]
     }
   }
   console.log(cells)
