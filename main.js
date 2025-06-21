@@ -37,7 +37,7 @@ window.onload = function() {
     [0,0,0  ,0,   0.8,-1,0.7,0.5],
   ]
   cells=[]
-  for(i=0;i<8;i++) {
+  for(type_of_unit=0;type_of_unit<8;type_of_unit++) {
     for(units=0;units<20;units++) {
       cells[cells.length]=[i,Math.random()*100,Math.random()*150]
     }
@@ -68,7 +68,7 @@ window.onload = function() {
       c_y   =cells[i][2]
       /* 円の描画 */
       ctx.beginPath();
-      ctx.arc(c_x, c_y, size/80, 0, 6.3);
+      ctx.arc(c_x, c_y, size/80, 0, Math.PI*2);
       ctx.closePath();
       ctx.fill();
     }
